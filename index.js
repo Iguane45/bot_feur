@@ -11,6 +11,7 @@ bot.on('ready' , function(){
 bot.on('message' , function(message){
     message.content.toLowerCase()
     let msg = message.content.split(' ')
+    message.channel.send(msg)
     let index = msg.length - 1
     if(msg[index] === 'quoi' ||
         msg[index] === 'quoi.' ||
@@ -27,7 +28,7 @@ bot.on('message' , function(message){
         //msg[index - 1] === 'POURQUOI'
         ) {
 
-        message.channel.send('feur')
+        //message.channel.send('feur')
     }
 })
 
