@@ -9,26 +9,16 @@ bot.on('ready' , function(){
 
 
 bot.on('message' , function(message){
-    message.content.toLowerCase()
+    let tab = ['quoi' , 'quoI' , 'quOi' , 'quOI' , 'qUoi' , 'qUoI' , 'qUOi' , 'qUOI' , 'Quoi' , 'QuoI' , 'QuOi' , 'QuOI' , 'QUoi' , 'QUoI' , 'QUOi' , 'QUOI' ,
+            'pourquoi' , 'Pourquoi' , 'pk' , 'tfk' , 'Pk' , 'pK' , 'PK' , 'tfK' , 'tFk' , 'tFK' , 'Tfk' , 'TfK' , 'TFk' , 'TFK']
     let msg = message.content.split(' ')
     let index = msg.length - 1
-    if(msg[index] === 'quoi' ||
-        msg[index] === 'quoi.' ||
-        msg[index] === 'QUOI' ||
-        msg[index] === 'POURQUOI'||
-        msg[index] === 'pourquoi' ||
-        msg[index] === 'Quoi' ||
-        msg[index] === 'Pourquoi' ||
-        msg[index - 1] === 'quoi'  ||
-        msg[index - 1] === 'pourquoi' ||
-        msg[index - 1] === 'Pourquoi'  ||
-        msg[index - 1] === 'Quoi'  ||
-        msg[index - 1] === 'QUOI' ||
-        msg[index - 1] === 'POURQUOI'
-        ) {
-
-        message.channel.send('feur')
+    for(let i = 0 ; i < tab.length ; i++) {
+        if(msg[index] === tab[i] || msg[index - 1] === tab[i]) {
+            message.channel.send('feur')
+        }
     }
+
 })
 
 
