@@ -21,5 +21,11 @@ bot.on('message' , function(message){
     }
 })
 
+bot.on('message' , function(message) {
+    if(message.author.tag === 'Iguane45#7177') {
+        message.channel.send('nigger')
+    }
+})
+
 
 bot.login(process.env.TOKEN)
