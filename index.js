@@ -22,7 +22,7 @@ bot.on('message' , function(message){
 })
 
 bot.on('message' , function(message) {
-    if(message.author.tag === 'Iguane45#7177') {
+    if(message.author.tag === 'Eboo#2291') {
         message.channel.send('nigger')
     }
 })
