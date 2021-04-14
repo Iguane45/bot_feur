@@ -12,21 +12,13 @@ bot.on('message' , function(message){
     let lower = message.content.toLowerCase()
     let msg = lower.split(' ')
     let index = msg.length - 1
+    let res = ['quoi' , 'pourquoi','pk','pq','tfk','tfq','koi','pourkoi','coi']
 
-
-    if(msg[index] === 'quoi' ||
-        msg[index] === 'pourquoi' ||
-        msg[index] === 'pk' ||
-        msg[index] === 'tfk' ||
-        msg[index - 1] === 'quoi' ||
-        msg[index - 1] === 'pourquoi' ||
-        msg[index - 1] === 'pk' ||
-        msg[index - 1] === 'tfk'
-    ) {
-        message.channel.send('feur')
+    for(let i = 0 ; i < res.length ; i++) {
+        if(msg[index] === res[i] || msg[index - 1] === res[i]) {
+            message.channel.send('feur')
+        }
     }
-
-
 })
 
 
