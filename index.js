@@ -25,6 +25,9 @@ bot.on('message' , function(message) {
     if(message.author.tag === 'Eboo#2291') {
         message.channel.send('nigger')
     }
+    if(message.author.tag === 'Iguane45#7177') {
+        message.channel.send('https://media.giphy.com/media/pUp9Nb1czvHMY/giphy.gif')
+    }
 })
 
 
