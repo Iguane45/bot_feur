@@ -32,7 +32,7 @@ bot.on('message' , function(message) {
         message.channel.send('nigger')
     }
     if(message.author.tag === 'Iguane45#7177') {
-        let res = Math.random() * gifs.length
+        let res = Math.floor(Math.random() * gifs.length)
         message.channel.send(gifs[res])
     }
 })
