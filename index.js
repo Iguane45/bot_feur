@@ -22,11 +22,17 @@ bot.on('message' , function(message){
 })
 
 bot.on('message' , function(message) {
+    let gifs = ['https://tenor.com/view/girls-und-panzer-bt42-tank-tank-jump-bt7artillery-gif-20965914' , 'https://tenor.com/view/erika-girls-und-panzer-itsumi-erika-gif-21051842',
+                'https://tenor.com/view/girls-und-panzer-gif-18965538' , 'https://tenor.com/view/girls-und-panzer-gif-17972911',
+                'https://tenor.com/view/karl-ger%c3%a4t-girls-und-panzer-panther-girls-und-panzer-der-film-crash-gif-16912794' , 'https://tenor.com/view/girls-un-panzer-gif-10583885',
+                'https://tenor.com/view/tulta-girls-und-panzer-mika-anime-gif-16931590' , 'https://tenor.com/view/tank-anime-girls-und-panzer-epic-fight-gif-14056386',]
+
+
     if(message.author.tag === 'Eboo#2291') {
         message.channel.send('nigger')
     }
     if(message.author.tag === 'Iguane45#7177') {
-        message.channel.send('https://media.giphy.com/media/pUp9Nb1czvHMY/giphy.gif')
+        message.channel.send(gifs[Math.random() * gifs.length])
     }
 })
 
